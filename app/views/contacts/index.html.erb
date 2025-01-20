@@ -1,0 +1,12 @@
+<h1>Contacts#index</h1>
+<p>Find me in app/views/contacts/index.html.erb</p>
+
+<ul class="custom-list">
+  <% @names.each do |name| %>
+    <li class="custom-list">
+      Name: <%= name %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "About", about_path %>
+<%= link_to "Back", root_path %>
